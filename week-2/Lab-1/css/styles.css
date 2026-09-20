@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 24px;
+}
+
+header, footer {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    background-color:beige;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    
+    header { 
+        background-color: lightblue;
+    }
+
+article {
+    display:inline-block;
+    width: 30%;
+    margin-right: 3%;
+    vertical-align: top;
+}
+
+}
