@@ -69,7 +69,6 @@
     <p>Real tips from UTM students, for UTM students.</p>
   </header>
 
-  <main>
     
 <main class="container py-5">
 
@@ -226,7 +225,175 @@
   </div>
 </div>
 
+<!-- Card 3: Time Management -->
+<div class="col-12 md:col-6 lg:col-4">
+  <div class="card h-100">
+
+    <img src="images/time.jpg"
+         class="card-img-top"
+         alt="Planner and notebook for organizing assignments">
+
+    <div class="card-body">
+      <h3 class="card-title">Manage Your Time</h3>
+
+      <p class="card-text">
+        My biggest UTM survival tip is to never
+        leave assignments until the last minute.
+        Planning ahead makes university less stressful.
+      </p>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          Time Management Tips
+        </summary>
+
+        <div class="accordion-body">
+          Write down your deadlines, start assignments
+          early, and use breaks between classes to study.
+          Even completing a little work each day helps.
+        </div>
+      </details>
+
+      <button type="button"
+              class="btn-solid theme-primary mt-3"
+              data-bs-toggle="dialog"
+              data-bs-target="#timeDialog">
+        Learn More
+      </button>
+
+    </div>
   </div>
+</div>
+
+<!-- Card 4: Commuting to UTM -->
+<div class="col-12 md:col-6 lg:col-4">
+  <div class="card h-100">
+
+    <img src="images/commute.jpg"
+         class="card-img-top"
+         alt="Bus transportation for students commuting to UTM">
+
+    <div class="card-body">
+      <h3 class="card-title">Plan Your Commute</h3>
+
+      <p class="card-text">
+        Getting to UTM can take time, especially
+        during rush hour. Check your bus schedule
+        or traffic before leaving so you can
+        arrive on time.
+      </p>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          Commuting Tips
+        </summary>
+
+        <div class="accordion-body">
+          Check transit updates before leaving home.
+          Give yourself extra time for delays,
+          especially when you have an early class
+          or an important exam.
+        </div>
+      </details>
+
+      <button type="button"
+              class="btn-solid theme-primary mt-3"
+              data-bs-toggle="dialog"
+              data-bs-target="#commuteDialog">
+        Learn More
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<!-- Card 5: Using Office Hours -->
+<div class="col-12 md:col-6 lg:col-4">
+  <div class="card h-100">
+
+    <img src="images/office.jpg"
+         class="card-img-top"
+         alt="Student meeting with a professor">
+
+    <div class="card-body">
+      <h3 class="card-title">Use Office Hours</h3>
+
+      <p class="card-text">
+        One of my biggest UTM tips is to use
+        office hours. Professors and TAs are
+        there to help, so don't be afraid
+        to ask questions.
+      </p>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          Office Hours Tips
+        </summary>
+
+        <div class="accordion-body">
+          Write down your questions before
+          attending. You can ask about
+          assignments, difficult concepts,
+          or feedback on your work.
+        </div>
+      </details>
+
+      <button type="button"
+              class="btn-solid theme-primary mt-3"
+              data-bs-toggle="dialog"
+              data-bs-target="#officeDialog">
+        Learn More
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<!-- Card 6: Getting Involved at UTM -->
+<div class="col-12 md:col-6 lg:col-4">
+  <div class="card h-100">
+
+    <img src="images/clubs.jpg"
+         class="card-img-top"
+         alt="University students participating in campus activities">
+
+    <div class="card-body">
+      <h3 class="card-title">Get Involved at UTM</h3>
+
+      <p class="card-text">
+        University is not just about studying!
+        Joining clubs and attending campus events
+        can help you make friends, meet new people,
+        and feel more connected to UTM.
+      </p>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          Campus Life Tips
+        </summary>
+
+        <div class="accordion-body">
+          Look for student clubs that match your
+          interests. Attend campus events, try
+          new activities, and don't be afraid
+          to meet new people.
+        </div>
+      </details>
+
+      <button type="button"
+              class="btn-solid theme-primary mt-3"
+              data-bs-toggle="dialog"
+              data-bs-target="#clubsDialog">
+        Learn More
+      </button>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
 </section>
 
 <!-- Study Spot Dialog -->
@@ -291,9 +458,144 @@
 
 </dialog>
 
+<!-- Card 3 Dialog -->
+<dialog id="timeDialog" class="dialog"
+        aria-labelledby="timeDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="timeDialogTitle">Stay Organized at UTM</h3>
+
+    <button type="button" class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      University deadlines can pile up quickly.
+      My advice is to start early, make a weekly
+      schedule, and avoid last-minute studying.
+      Use gaps between lectures to finish smaller tasks.
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+<!-- Card 4: Commuting Dialog -->
+<dialog id="commuteDialog" class="dialog"
+        aria-labelledby="commuteDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="commuteDialogTitle">Getting to UTM</h3>
+    <button type="button" class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      Check your bus schedule or traffic before
+      leaving for UTM. Give yourself extra time
+      for delays, especially before exams.
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+<!-- Card 5: Office Hours Dialog -->
+<dialog id="officeDialog" class="dialog"
+        aria-labelledby="officeDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="officeDialogTitle">Using Office Hours</h3>
+
+    <button type="button" class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      Office hours are a great way to get extra
+      help at UTM. You can meet with professors
+      or TAs to ask questions, review assignments,
+      and better understand course material.
+    </p>
+
+    <p>
+      My tip is to prepare a few questions
+      beforehand so you can make the most
+      of your visit.
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+<!-- Card 6: Campus Life Dialog -->
+<dialog id="clubsDialog" class="dialog"
+        aria-labelledby="clubsDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="clubsDialogTitle">Getting Involved at UTM</h3>
+
+    <button type="button" class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      Getting involved on campus is a great way
+      to make university more enjoyable. UTM
+      offers student clubs, activities, and
+      events where you can meet people who
+      share your interests.
+    </p>
+
+    <p>
+      My tip is to try at least one club or
+      campus event, even if you're nervous
+      about going alone!
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+
 </main>
 
-  </main>
 
   <footer>
     <p>UTM Survival Guide | CCT360 Lab 6</p>
