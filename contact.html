@@ -112,12 +112,40 @@
   </div>
 </div>
 
+<!-- Message -->
+<div class="col-12">
+  <div class="form-field">
+    <label for="message">Message</label>
+    <textarea class="form-control"
+              id="message" name="message"
+              rows="5" required></textarea>
   </div>
+</div>
 
+<!-- Consent -->
+<div class="col-12">
+  <div class="form-field">
+    <div class="check">
+      <input class="check-input" type="checkbox"
+             id="consent" name="consent" required>
+      <label class="check-label" for="consent">
+        I agree to share my information
+        for the purpose of this message.
+      </label>
+    </div>
+  </div>
+</div>
+
+  </div>
+<button type="submit" class="btn-solid theme-primary mt-4">
+  Send Message
+</button>
 </form>
 
   </main>
-
+<footer class="container py-4">
+  <p>UTM Survival Guide | CCT360 Lab 6</p>
+</footer>
   <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
