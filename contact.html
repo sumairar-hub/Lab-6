@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | UTM Survival Guide</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+      UTM Survival Guide
+    </a>
+
+    <button class="btn-icon navbar-toggler" type="button"
+      data-bs-toggle="drawer"
+      data-bs-target="#navbarDrawer"
+      aria-controls="navbarDrawer"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+
+    <dialog class="drawer drawer-end" tabindex="-1"
+      id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+
+      <div class="drawer-body">
+        <ul class="nav navbar-nav me-auto">
+
+         <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+         </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#tips">Student Tips</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </dialog>
+
+  </div>
+</nav>
+  <main class="container py-5">
+    <h1>Contact Us</h1>
+    <p>
+      Have a UTM survival tip or suggestion?
+      We'd love to hear from you!
+    </p>
+    
+<!-- Contact Form -->
+<form action="#" method="get">
+
+  <div class="row g-4">
+
+    <!-- First Name -->
+    <div class="col-12 md:col-6">
+      <div class="form-field">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control"
+               id="firstName" name="firstName" required>
+      </div>
+    </div>
+
+    <!-- Last Name -->
+    <div class="col-12 md:col-6">
+      <div class="form-field">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control"
+               id="lastName" name="lastName" required>
+      </div>
+    </div>
+
+<!-- Email -->
+<div class="col-12 md:col-6">
+  <div class="form-field">
+    <label for="email">Email</label>
+    <input type="email" class="form-control"
+           id="email" name="email"
+           placeholder="sumaira.rasool@mail.utoronto.ca" required>
+  </div>
+</div>
+
+<!-- Topic -->
+<div class="col-12 md:col-6">
+  <div class="form-field">
+    <label for="topic">Topic</label>
+    <select class="form-control" id="topic"
+            name="topic" required>
+      <option value="">Choose a topic</option>
+      <option value="study">Study Tips</option>
+      <option value="food">Campus Food</option>
+      <option value="life">Campus Life</option>
+    </select>
+  </div>
+</div>
+
+  </div>
+
+</form>
+
+  </main>
+
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
