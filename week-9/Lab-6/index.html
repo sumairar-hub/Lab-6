@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UTM Survival Guide | Home</title>
+
+  <!-- Bootstrap 6 CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">
+      UTM Survival Guide
+    </a>
+
+    <button class="btn-icon navbar-toggler" type="button"
+      data-bs-toggle="drawer"
+      data-bs-target="#navbarDrawer"
+      aria-controls="navbarDrawer"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+
+    <dialog class="drawer drawer-end" tabindex="-1"
+      id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close"
+          data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+
+      <div class="drawer-body">
+        <ul class="nav navbar-nav me-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+              href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#tips">Student Tips</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </dialog>
+
+  </div>
+</nav>
+
+  <header>
+    <h1>UTM Survival Guide</h1>
+    <p>Real tips from UTM students, for UTM students.</p>
+  </header>
+
+  <main>
+    
+<main class="container py-5">
+
+  <h2 class="mb-4">Welcome to Your UTM Survival Guide</h2>
+
+  <div id="utmCarousel" class="carousel slide">
+
+    <div class="carousel-inner rounded-5">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="bg-subtle-primary p-9 bg-1 rounded-5"
+             style="min-height: 320px;">
+          <h3>Study Smarter</h3>
+          <p>
+            Find empty classrooms and quiet places
+            to get your assignments done.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="bg-subtle-success p-9 bg-2 rounded-5"
+             style="min-height: 320px;">
+          <h3>Eat on a Budget</h3>
+          <p>
+            Discover affordable food options,
+            including the Blind Duck.
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="bg-subtle-warning p-9 bg-3 rounded-5"
+             style="min-height: 320px;">
+          <h3>Make the Most of UTM</h3>
+          <p>
+            Attend office hours, meet new people,
+            and never leave things until the last minute.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Previous and Next Controls -->
+    <div class="d-flex justify-content-center gap-2 mt-3">
+
+      <button class="btn-icon btn-sm" type="button"
+              data-bs-target="#utmCarousel"
+              data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="btn-icon btn-sm" type="button"
+              data-bs-target="#utmCarousel"
+              data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+  </div>
+
+<!-- UTM Student Tips -->
+<section id="tips" class="mt-5">
+
+  <h2 class="mb-4">UTM Student Survival Tips</h2>
+
+  <div class="row g-4">
+
+    <!-- Card 1: Study Spots -->
+    <div class="col-12 md:col-6 lg:col-4">
+      <div class="card h-100">
+
+        <img src="images/study.jpg"
+             class="card-img-top"
+             alt="Quiet classroom with desks for studying">
+
+        <div class="card-body">
+          <h3 class="card-title">Find Empty Classrooms</h3>
+
+          <p class="card-text">
+            Need somewhere quiet to study? Check for
+            available classrooms at UTM. You might
+            get a whole lecture room to yourself!
+          </p>
+
+          <details class="accordion-item">
+            <summary class="accordion-header">
+              Study Spot Tips
+            </summary>
+
+            <div class="accordion-body">
+              Look for an empty classroom and make sure
+              it is not booked for a lecture or event.
+              You can also try the library or other
+              campus study spaces.
+            </div>
+          </details>
+
+          <button type="button"
+                  class="btn-solid theme-primary mt-3"
+                  data-bs-toggle="dialog"
+                  data-bs-target="#studyDialog">
+            Learn More
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Card 2: Affordable Food -->
+<div class="col-12 md:col-6 lg:col-4">
+  <div class="card h-100">
+
+    <img src="images/food.jpg"
+         class="card-img-top"
+         alt="Affordable meal at a campus restaurant">
+
+    <div class="card-body">
+      <h3 class="card-title">Affordable Food at UTM</h3>
+
+      <p class="card-text">
+        Eating on campus can get expensive.
+        The Blind Duck is one of my favourite
+        places to grab food at UTM.
+      </p>
+
+      <details class="accordion-item">
+        <summary class="accordion-header">
+          Food Tips
+        </summary>
+
+        <div class="accordion-body">
+          Check the Blind Duck for daily specials.
+          You can also bring lunch and snacks from
+          home to save money during long school days.
+        </div>
+      </details>
+
+      <button type="button"
+              class="btn-solid theme-primary mt-3"
+              data-bs-toggle="dialog"
+              data-bs-target="#foodDialog">
+        Learn More
+      </button>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Study Spot Dialog -->
+<dialog id="studyDialog" class="dialog"
+        aria-labelledby="studyDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="studyDialogTitle">Find Your Study Spot</h3>
+
+    <button type="button" class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      My personal tip is to look for available
+      classrooms at UTM. It's a great way to find
+      a quiet place to focus between classes.
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+<!-- Food Dialog -->
+<dialog id="foodDialog" class="dialog"
+        aria-labelledby="foodDialogTitle">
+
+  <div class="dialog-header">
+    <h3 id="foodDialogTitle">Eating on a Budget</h3>
+
+    <button type="button"
+            class="btn-close"
+            data-bs-dismiss="dialog"
+            aria-label="Close"></button>
+  </div>
+
+  <div class="dialog-body">
+    <p>
+      I recommend checking out the Blind Duck
+      at UTM. Students on Reddit have also
+      recommended looking for daily specials
+      and bringing food from home to save money.
+    </p>
+  </div>
+
+  <div class="dialog-footer">
+    <button type="button"
+            class="btn-solid theme-primary"
+            data-bs-dismiss="dialog">
+      Close
+    </button>
+  </div>
+
+</dialog>
+
+</main>
+
+  </main>
+
+  <footer>
+    <p>UTM Survival Guide | CCT360 Lab 6</p>
+  </footer>
+
+  <!-- Bootstrap 6 JavaScript -->
+  <script type="module" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
